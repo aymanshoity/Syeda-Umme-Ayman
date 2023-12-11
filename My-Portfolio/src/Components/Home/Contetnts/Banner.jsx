@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Banner = () => {
     return (
         <div className="hero min-h-screen text-[#B0578D]" style={{ backgroundImage: `url(${banner})` }}>
-            <div className="py-40 hero-content text-center flex-col lg:flex-row ">
+            <div className="py-40 hero-content text-center flex-col-reverse lg:flex-row ">
 
                 <motion.div
                     className="box text-center lg:text-left flex-1"
@@ -95,9 +95,7 @@ const Banner = () => {
                         className='lg:w-[500px] w-[400px] h-[400px] lg:h-[500px] rounded-full border-solid border-4 border-[#B0578D] '
                     />
                 </motion.div>
-                {/* <div className="">
-                    <img src=  />
-                </div> */}
+                
             </div>
 
         </div>
