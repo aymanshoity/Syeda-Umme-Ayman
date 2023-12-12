@@ -1,5 +1,4 @@
 import SharedHeading from "../../SharedComponent/SharedHeading";
-import backgroundImage from '../../../assets/pic16.jpg'
 import { motion } from "framer-motion";
 
 import html from '../../../assets/Html5.jpeg'
@@ -14,7 +13,7 @@ import react from '../../../assets/React.jpeg'
 const MySkill = () => {
     return (
         <div className="lg:w-[1280px] mx-auto py-20">
-            <SharedHeading heading={'My Skills'}></SharedHeading>
+            <SharedHeading heading={'My Expertises'}></SharedHeading>
             <div className="mb-5 text-[#B0578D] flex flex-col max-w-xl justify-center items-center mx-auto text-center ">
                 <p>I have  experience building websites. Below is a quick
                     overview of my main technical skill sets and technologies i use. Want to find out more about my experience?

@@ -1,10 +1,10 @@
-import myPicture from '../../../assets/crop.jpg'
-import SharedHeading from '../../SharedComponent/SharedHeading';
+import SharedHeading from "../SharedComponent/SharedHeading";
+import myPicture from '../../assets/crop.jpg'
 
-const AboutMe = () => {
+const About = () => {
     return (
         <div className="lg:w-[1280px] mx-auto py-40" >
-            <SharedHeading heading={'Who I am'}></SharedHeading>
+            <SharedHeading heading={'About Me'}></SharedHeading>
             <div className="hero min-h-screen bg-[#B0578D] text-[#FFE4D6] rounded-lg" >
                 
                 <div className="hero-content text-center lg:text-left flex flex-col lg:flex-row ">
@@ -48,4 +48,4 @@ const AboutMe = () => {
     );
 };
 
-export default AboutMe;
+export default About;
