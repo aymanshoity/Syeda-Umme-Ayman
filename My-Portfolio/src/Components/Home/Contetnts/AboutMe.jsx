@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import myPicture from '../../../assets/crop.jpg'
 import SharedHeading from '../../SharedComponent/SharedHeading';
 
@@ -6,7 +7,7 @@ const AboutMe = () => {
         <div className="lg:w-[1280px] mx-auto py-40" >
             <SharedHeading heading={'Who I am'}></SharedHeading>
             <div className="hero min-h-screen bg-[#B0578D] text-[#FFE4D6] rounded-lg" >
-                
+
                 <div className="hero-content text-center lg:text-left flex flex-col lg:flex-row ">
                     <img className='lg:w-[500px] w-[300px] lg:h-[500px]  h-[300px]  rounded-xl border-solid border-4 border-[#D988B9]' src={myPicture} alt="" />
                     <div className="max-w-md">
@@ -40,7 +41,9 @@ const AboutMe = () => {
                                 <p className='mb-5 '>Dhaka,Bangladesh</p>
                             </div>
                         </div>
-                        <button className="btn bg-[#FACBEA] font-semibold  text-[#B0578D]">Hire me</button>
+                        <Link to='/contact'>
+                            <button className="btn bg-[#FACBEA] font-semibold  text-[#B0578D]">Hire me</button>
+                        </Link>
                     </div>
                 </div>
             </div>

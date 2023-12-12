@@ -1,6 +1,7 @@
 import banner from '../../../assets/pic15.jpeg'
 import me from '../../../assets/dd.jpg'
 import { motion } from "framer-motion";
+import { Link } from 'react-router-dom';
 const Banner = () => {
     return (
         <div className="hero min-h-screen text-[#B0578D]" style={{ backgroundImage: `url(${banner})` }}>
@@ -54,31 +55,36 @@ const Banner = () => {
                         Jr. Front-End Developer
                     </motion.p>
 
-                    <motion.button
-                        className='btn bg-[#B0578D] text-[#FFE4D6] mr-2'
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{
-                            duration: 0.5,
-                            delay: 0.8,
-                            ease: [0, 0.71, 0.2, 1.01],
-                        }}
-                    >
-                        Download CV
-                    </motion.button>
+                    <Link to='https://drive.google.com/file/d/1t4HnmHrXDG0NAL9SmH_lxkzs2kYY2cuy/view?usp=sharing'>
+                        <motion.button
+                            className='btn bg-[#B0578D] text-[#FFE4D6] mr-2'
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{
+                                duration: 0.5,
+                                delay: 0.8,
+                                ease: [0, 0.71, 0.2, 1.01],
+                            }}
+                        >
+                            Download CV
+                        </motion.button>
+                    </Link>
 
-                    <motion.button
-                        className='btn bg-[#B0578D] text-[#FACBEA]'
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{
-                            duration: 0.5,
-                            delay: 0.9,
-                            ease: [0, 0.71, 0.2, 1.01],
-                        }}
-                    >
-                        Contact
-                    </motion.button>
+
+                    <Link to='/contact'>
+                        <motion.button
+                            className='btn bg-[#B0578D] text-[#FACBEA]'
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{
+                                duration: 0.5,
+                                delay: 0.9,
+                                ease: [0, 0.71, 0.2, 1.01],
+                            }}
+                        >
+                            Contact
+                        </motion.button>
+                    </Link>
                 </motion.div>
                 <motion.div
                     className="box flex-1"
@@ -95,7 +101,7 @@ const Banner = () => {
                         className='lg:w-[500px] w-[400px] h-[400px] lg:h-[500px] rounded-full border-solid border-4 border-[#B0578D] '
                     />
                 </motion.div>
-                
+
             </div>
 
         </div>
